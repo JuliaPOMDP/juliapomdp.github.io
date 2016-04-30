@@ -79,6 +79,27 @@
       <div class="row">
         <div class="col-md-6">
           <h2>Getting Started</h2>
+          <ol>
+            <li>Download and install Julia for your OS follwing <a href="http://julialang.org/downloads/"> these instructions</a></li>
+            <li>Install the meta package:
+              <br>
+              <code> julia> Pkg.clone("https://github.com/JuliaPOMDP/POMDPs.jl")
+              </code>
+            </li>
+            <li>Install some MDP solvers:
+              <br>
+              <code> julia> using POMDPs </code> <br>
+              <code> julia> POMDPs.add("DiscreteValueIteration") </code> <br>
+              <code> julia> POMDPs.add("MCTS") </code> <br>
+            </li>
+            <li>Install some POMDP solvers:
+              <br>
+              <code> julia> using POMDPs </code> <br>
+              <code> julia> POMDPs.add("QMDP") </code> <br>
+              <code> julia> POMDPs.add("SARSOP") </code> <br>
+            </li>
+            
+          </ol>
         </div>
 
         <div class="col-md-6">
