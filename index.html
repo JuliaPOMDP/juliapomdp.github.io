@@ -52,7 +52,7 @@
         <img style="height: 12em; width:auto" src="/images/juliapomdp.png">
         <h1>JuliaPOMDP</h1>
         <p>
-          POMDP packages for the <a href="http://julialang.org">Julia language.</a>
+          Packages for solving POMDPs in <a href="http://julialang.org">the Julia programming language</a>.
         </p>
       </div>
 
@@ -62,45 +62,22 @@
       <a id="about"></a>
       <div class="row">
         <div class="col-md-6">
-          <h1>What is Julia?</h1>
-          <p>
-            <a href="http://julialang.org">"Julia is a high-level, high-performance dynamic programming language for technical computing"</a>. It is free (open source) and supports Windows, OSX, and Linux. It has a familiar syntax, works well with external libraries, is fast, and has advanced language features like metaprogramming.
-          </p>
-        </div>
-        <div class="col-md-6">
           <h1>What is JuliaPOMDP?</h1>
           <p>
-            JuliaPOMDP is an organization that brings together packages written in Julia that are related to solving POMDPs.
+          JuliaPOMDP is an organization that maintains software packages for defining and solving partially observable Markov decision processes (POMDPs). The POMDP formalism can be used to represent and solve a wide range of sequential decision problems encountered in the real world, for example autonomous driving and flying, planning logistical operations, and making medical diagnoses. JuliaPOMDP seeks to improve research, collaboration, and education related to POMDPs by bringing together a variety of problems and solution techniques in a unified software ecosystem.
+          </p>
+          <p>
+          JuliaPOMDP maintains packages written in <a href="http://julialang.org">the Julia programming language</a>. Julia's combination of speed and flexibility make it uniquely suitable for both representing a large variety of problems and algorithms and providing the computational efficiency to solve large problems. The main package that JuliaPOMDP maintains is <a href="https://github.com/JuliaPOMDP/POMDPs.jl">POMDPs.jl</a>. This package provides an interface that makes problems and solvers interoperable as much as possible.
+          </p>
+          <p>
+          More information can be found at the <a href="https://github.com/JuliaPOMDP/POMDPs.jl">POMDPs.jl github page</a>, in the <a href="http://juliapomdp.github.io/POMDPs.jl/latest/">POMDPs.jl documentation</a>, or in the following paper:
+          </p>
+          <p>
           </p>
         </div>
       </div>
 
       
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Getting Started</h2>
-          <ol>
-            <li>Download and install Julia for your OS follwing <a href="http://julialang.org/downloads/"> these instructions</a></li>
-            <li>Install the meta package:
-              <br>
-              <code> julia> Pkg.add("POMDPs")
-              </code>
-            </li>
-            <li>Install some MDP solvers:
-              <br>
-              <code> julia> using POMDPs </code> <br>
-              <code> julia> POMDPs.add("DiscreteValueIteration") </code> <br>
-              <code> julia> POMDPs.add("MCTS") </code> <br>
-            </li>
-            <li>Install some POMDP solvers:
-              <br>
-              <code> julia> using POMDPs </code> <br>
-              <code> julia> POMDPs.add("QMDP") </code> <br>
-              <code> julia> POMDPs.add("SARSOP") </code> <br>
-            </li>
-            
-          </ol>
-        </div>
 
         <div class="col-md-6">
           <h2>Examples</h2>
